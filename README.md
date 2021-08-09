@@ -1,11 +1,15 @@
-# Changes to Compound's Governor Bravo
+# Two Changes to Compound's Governor Bravo
 
 In GovernorBravoDelegate.sol,
 
 - Delete lines 321 and 326
 - Change line 327 to `initialProposalId = 1;`
 
-## Original \_initiate function:
+In GovernorBravoInterfaces.sol,
+
+- Delete lines 179-182
+
+### Original \_initiate function:
 
 ```
     /**
@@ -22,7 +26,7 @@ In GovernorBravoDelegate.sol,
     }
 ```
 
-## NEW \_initiate function:
+### New \_initiate function:
 
 ```
     /**
@@ -36,7 +40,3 @@ In GovernorBravoDelegate.sol,
         timelock.acceptAdmin();
     }
 ```
-
-In GovernorBravoInterfaces.sol,
-
-- Delete lines 179-182
