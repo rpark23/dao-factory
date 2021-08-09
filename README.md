@@ -1,4 +1,4 @@
-# Two Changes to Compound's Governor Bravo
+# Remove GovernorAlpha from GovernorBravo
 
 In GovernorBravoDelegate.sol, modify \_initiate function:
 
