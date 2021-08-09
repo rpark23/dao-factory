@@ -1,18 +1,18 @@
-# Compound's Governor Bravo
+# Changes to Compound's Governor Bravo
 
 In GovernorBravoDelegate.sol,
 
-- Delete lines 321 and 326.
+- Delete lines 321 and 326
 - Change line 327 to
 
 ```
 initialProposalId = 1;
 ```
 
-Original \_initiate function:
+# Original \_initiate function:
 
 ```
-/**
+    /**
       * @notice Initiate the GovernorBravo contract
       * @dev Admin only. Sets initial proposal id which initiates the contract, ensuring a continuous proposal id count
       * @param governorAlpha The address for the Governor to continue the proposal id count from
@@ -26,10 +26,10 @@ Original \_initiate function:
     }
 ```
 
-NEW \_initiate function:
+# NEW \_initiate function:
 
 ```
-/**
+    /**
       * @notice Initiate the GovernorBravo contract
       * @dev Admin only. Sets initial proposal id which initiates the contract, ensuring a continuous proposal id count
       */
@@ -43,8 +43,4 @@ NEW \_initiate function:
 
 In GovernorBravoInterfaces.sol,
 
-- Delete lines 179-182.
-
-(Temporary Change) In Timelock.sol,
-
-- Reduce Timelock MINIMUM_DELAY to 0.
+- Delete lines 179-182
