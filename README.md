@@ -1,4 +1,4 @@
-# Remove GovernorAlpha from GovernorBravo
+# Remove Parameter GovernorAlpha
 
 In GovernorBravoDelegate.sol, modify \_initiate function:
 
