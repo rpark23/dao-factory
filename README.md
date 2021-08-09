@@ -3,13 +3,9 @@
 In GovernorBravoDelegate.sol,
 
 - Delete lines 321 and 326
-- Change line 327 to
+- Change line 327 to `initialProposalId = 1;`
 
-```
-initialProposalId = 1;
-```
-
-# Original \_initiate function:
+## Original \_initiate function:
 
 ```
     /**
@@ -26,7 +22,7 @@ initialProposalId = 1;
     }
 ```
 
-# NEW \_initiate function:
+## NEW \_initiate function:
 
 ```
     /**
