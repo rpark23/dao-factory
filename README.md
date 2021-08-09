@@ -1,11 +1,11 @@
 # Two Changes to Compound's Governor Bravo
 
-In GovernorBravoDelegate.sol,
+In GovernorBravoDelegate.sol, modify \_initiate function:
 
 - Delete lines 321 and 326
 - Change line 327 to `initialProposalId = 1;`
 
-In GovernorBravoInterfaces.sol,
+In GovernorBravoInterfaces.sol, delete GovernorAlpha Interface:
 
 - Delete lines 179-182
 
@@ -39,4 +39,13 @@ In GovernorBravoInterfaces.sol,
         initialProposalId = 1;
         timelock.acceptAdmin();
     }
+```
+
+### Deleted GovernorAlpha Interface:
+
+```
+interface GovernorAlpha {
+    /// @notice The total number of proposals
+    function proposalCount() external returns (uint);
+}
 ```
