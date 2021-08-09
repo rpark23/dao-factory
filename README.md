@@ -49,3 +49,5 @@ interface GovernorAlpha {
     function proposalCount() external returns (uint);
 }
 ```
+
+\*MINIMUM_DELAY in Timelock.sol set to 0 for testing purposes only
