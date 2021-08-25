@@ -1,45 +1,26 @@
 {
-  "contractName": "GovernorBravoDelegatorStorage",
+  "contractName": "TokenInterface",
   "abi": [
     {
       "constant": true,
-      "inputs": [],
-      "name": "admin",
-      "outputs": [
+      "inputs": [
         {
           "internalType": "address",
-          "name": "",
+          "name": "account",
           "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "blockNumber",
+          "type": "uint256"
         }
       ],
-      "payable": false,
-      "stateMutability": "view",
-      "type": "function"
-    },
-    {
-      "constant": true,
-      "inputs": [],
-      "name": "implementation",
+      "name": "getPriorVotes",
       "outputs": [
         {
-          "internalType": "address",
+          "internalType": "uint96",
           "name": "",
-          "type": "address"
-        }
-      ],
-      "payable": false,
-      "stateMutability": "view",
-      "type": "function"
-    },
-    {
-      "constant": true,
-      "inputs": [],
-      "name": "pendingAdmin",
-      "outputs": [
-        {
-          "internalType": "address",
-          "name": "",
-          "type": "address"
+          "type": "uint96"
         }
       ],
       "payable": false,
@@ -47,11 +28,11 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[],\"name\":\"admin\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"implementation\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"pendingAdmin\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/rpark23/Desktop/dao-factory/contracts/GovernorBravoInterfaces.sol\":\"GovernorBravoDelegatorStorage\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/rpark23/Desktop/dao-factory/contracts/GovernorBravoInterfaces.sol\":{\"keccak256\":\"0xfaca235f67e5483af7f0e4ca6338a84b63f3ab08cfefc580c41ca4d1d35a9bc2\",\"urls\":[\"bzz-raw://cb551e98388c675138125a0fdc7c81b63c248df37598e4c35b39e9b8997f7ac0\",\"dweb:/ipfs/QmQbdo5pYpcBuVw2SYwrkfnN8KfginfQnRZSrcbMK869fh\"]}},\"version\":1}",
-  "bytecode": "0x608060405234801561001057600080fd5b506101b0806100206000396000f3fe608060405234801561001057600080fd5b50600436106100415760003560e01c806326782247146100465780635c60da1b14610064578063f851a44014610082575b600080fd5b61004e6100a0565b60405161005b9190610120565b60405180910390f35b61006c6100c6565b6040516100799190610120565b60405180910390f35b61008a6100ec565b6040516100979190610120565b60405180910390f35b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b600260009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b61011a8161013b565b82525050565b60006020820190506101356000830184610111565b92915050565b60006101468261014d565b9050919050565b600073ffffffffffffffffffffffffffffffffffffffff8216905091905056fea365627a7a7231582003837e82ba3c22c2047a46efbb1ff64582b7dbc7445d1ca048141c93e10873276c6578706572696d656e74616cf564736f6c63430005100040",
-  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100415760003560e01c806326782247146100465780635c60da1b14610064578063f851a44014610082575b600080fd5b61004e6100a0565b60405161005b9190610120565b60405180910390f35b61006c6100c6565b6040516100799190610120565b60405180910390f35b61008a6100ec565b6040516100979190610120565b60405180910390f35b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b600260009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b61011a8161013b565b82525050565b60006020820190506101356000830184610111565b92915050565b60006101468261014d565b9050919050565b600073ffffffffffffffffffffffffffffffffffffffff8216905091905056fea365627a7a7231582003837e82ba3c22c2047a46efbb1ff64582b7dbc7445d1ca048141c93e10873276c6578706572696d656e74616cf564736f6c63430005100040",
-  "sourceMap": "2011:284:3:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;2011:284:3;;;;;;;",
-  "deployedSourceMap": "2011:284:3:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;2011:284:3;;;;;;;;;;;;;;;;;;;;;;;;;;;;;2187:27;;;:::i;:::-;;;;;;;;;;;;;;;;2263:29;;;:::i;:::-;;;;;;;;;;;;;;;;2104:20;;;:::i;:::-;;;;;;;;;;;;;;;;2187:27;;;;;;;;;;;;;:::o;2263:29::-;;;;;;;;;;;;;:::o;2104:20::-;;;;;;;;;;;;;:::o;5:113:-1:-;88:24;106:5;88:24;;;83:3;76:37;70:48;;;125:213;;243:2;232:9;228:18;220:26;;257:71;325:1;314:9;310:17;301:6;257:71;;;214:124;;;;;345:91;;407:24;425:5;407:24;;;396:35;;390:46;;;;443:121;;516:42;509:5;505:54;494:65;;488:76;;;",
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[{\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"blockNumber\",\"type\":\"uint256\"}],\"name\":\"getPriorVotes\",\"outputs\":[{\"internalType\":\"uint96\",\"name\":\"\",\"type\":\"uint96\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/rpark23/Desktop/dao-factory/contracts/GovernorBravoInterfaces.sol\":\"TokenInterface\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/rpark23/Desktop/dao-factory/contracts/GovernorBravoInterfaces.sol\":{\"keccak256\":\"0xfaca235f67e5483af7f0e4ca6338a84b63f3ab08cfefc580c41ca4d1d35a9bc2\",\"urls\":[\"bzz-raw://cb551e98388c675138125a0fdc7c81b63c248df37598e4c35b39e9b8997f7ac0\",\"dweb:/ipfs/QmQbdo5pYpcBuVw2SYwrkfnN8KfginfQnRZSrcbMK869fh\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "sourceMap": "",
+  "deployedSourceMap": "",
   "source": "pragma solidity ^0.5.16;\npragma experimental ABIEncoderV2;\n\n\ncontract GovernorBravoEvents {\n    /// @notice An event emitted when a new proposal is created\n    event ProposalCreated(uint id, address proposer, address[] targets, uint[] values, string[] signatures, bytes[] calldatas, uint startBlock, uint endBlock, string description);\n\n    /// @notice An event emitted when a vote has been cast on a proposal\n    /// @param voter The address which casted a vote\n    /// @param proposalId The proposal id which was voted on\n    /// @param support Support value for the vote. 0=against, 1=for, 2=abstain\n    /// @param votes Number of votes which were cast by the voter\n    /// @param reason The reason given for the vote by the voter\n    event VoteCast(address indexed voter, uint proposalId, uint8 support, uint votes, string reason);\n\n    /// @notice An event emitted when a proposal has been canceled\n    event ProposalCanceled(uint id);\n\n    /// @notice An event emitted when a proposal has been queued in the Timelock\n    event ProposalQueued(uint id, uint eta);\n\n    /// @notice An event emitted when a proposal has been executed in the Timelock\n    event ProposalExecuted(uint id);\n\n    /// @notice An event emitted when the voting delay is set\n    event VotingDelaySet(uint oldVotingDelay, uint newVotingDelay);\n\n    /// @notice An event emitted when the voting period is set\n    event VotingPeriodSet(uint oldVotingPeriod, uint newVotingPeriod);\n\n    /// @notice Emitted when implementation is changed\n    event NewImplementation(address oldImplementation, address newImplementation);\n\n    /// @notice Emitted when proposal threshold is set\n    event ProposalThresholdSet(uint oldProposalThreshold, uint newProposalThreshold);\n\n    /// @notice Emitted when pendingAdmin is changed\n    event NewPendingAdmin(address oldPendingAdmin, address newPendingAdmin);\n\n    /// @notice Emitted when pendingAdmin is accepted, which means admin is updated\n    event NewAdmin(address oldAdmin, address newAdmin);\n}\n\ncontract GovernorBravoDelegatorStorage {\n    /// @notice Administrator for this contract\n    address public admin;\n\n    /// @notice Pending administrator for this contract\n    address public pendingAdmin;\n\n    /// @notice Active brains of Governor\n    address public implementation;\n}\n\n\n/**\n * @title Storage for Governor Bravo Delegate\n * @notice For future upgrades, do not change GovernorBravoDelegateStorageV1. Create a new\n * contract which implements GovernorBravoDelegateStorageV1 and following the naming convention\n * GovernorBravoDelegateStorageVX.\n */\ncontract GovernorBravoDelegateStorageV1 is GovernorBravoDelegatorStorage {\n\n    /// @notice The delay before voting on a proposal may take place, once proposed, in blocks\n    uint public votingDelay;\n\n    /// @notice The duration of voting on a proposal, in blocks\n    uint public votingPeriod;\n\n    /// @notice The number of votes required in order for a voter to become a proposer\n    uint public proposalThreshold;\n\n    /// @notice Initial proposal id set at become\n    uint public initialProposalId;\n\n    /// @notice The total number of proposals\n    uint public proposalCount;\n\n    /// @notice The address of Token Timelock\n    TimelockInterface public timelock;\n\n    /// @notice The address of Token\n    TokenInterface public token;\n\n    /// @notice The official record of all proposals ever proposed\n    mapping (uint => Proposal) public proposals;\n\n    /// @notice The latest proposal for each proposer\n    mapping (address => uint) public latestProposalIds;\n\n\n    struct Proposal {\n        /// @notice Unique id for looking up a proposal\n        uint id;\n\n        /// @notice Creator of the proposal\n        address proposer;\n\n        /// @notice The timestamp that the proposal will be available for execution, set once the vote succeeds\n        uint eta;\n\n        /// @notice the ordered list of target addresses for calls to be made\n        address[] targets;\n\n        /// @notice The ordered list of values (i.e. msg.value) to be passed to the calls to be made\n        uint[] values;\n\n        /// @notice The ordered list of function signatures to be called\n        string[] signatures;\n\n        /// @notice The ordered list of calldata to be passed to each call\n        bytes[] calldatas;\n\n        /// @notice The block at which voting begins: holders must delegate their votes prior to this block\n        uint startBlock;\n\n        /// @notice The block at which voting ends: votes must be cast prior to this block\n        uint endBlock;\n\n        /// @notice Current number of votes in favor of this proposal\n        uint forVotes;\n\n        /// @notice Current number of votes in opposition to this proposal\n        uint againstVotes;\n\n        /// @notice Current number of votes for abstaining for this proposal\n        uint abstainVotes;\n\n        /// @notice Flag marking whether the proposal has been canceled\n        bool canceled;\n\n        /// @notice Flag marking whether the proposal has been executed\n        bool executed;\n\n        /// @notice Receipts of ballots for the entire set of voters\n        mapping (address => Receipt) receipts;\n    }\n\n    /// @notice Ballot receipt record for a voter\n    struct Receipt {\n        /// @notice Whether or not a vote has been cast\n        bool hasVoted;\n\n        /// @notice Whether or not the voter supports the proposal or abstains\n        uint8 support;\n\n        /// @notice The number of votes the voter had, which were cast\n        uint96 votes;\n    }\n\n    /// @notice Possible states that a proposal may be in\n    enum ProposalState {\n        Pending,\n        Active,\n        Canceled,\n        Defeated,\n        Succeeded,\n        Queued,\n        Expired,\n        Executed\n    }\n}\n\ninterface TimelockInterface {\n    function delay() external view returns (uint);\n    function GRACE_PERIOD() external view returns (uint);\n    function acceptAdmin() external;\n    function queuedTransactions(bytes32 hash) external view returns (bool);\n    function queueTransaction(address target, uint value, string calldata signature, bytes calldata data, uint eta) external returns (bytes32);\n    function cancelTransaction(address target, uint value, string calldata signature, bytes calldata data, uint eta) external;\n    function executeTransaction(address target, uint value, string calldata signature, bytes calldata data, uint eta) external payable returns (bytes memory);\n}\n\ninterface TokenInterface {\n    function getPriorVotes(address account, uint blockNumber) external view returns (uint96);\n}",
   "sourcePath": "/Users/rpark23/Desktop/dao-factory/contracts/GovernorBravoInterfaces.sol",
   "ast": {
@@ -6248,7 +6229,7 @@
   },
   "networks": {},
   "schemaVersion": "3.3.4",
-  "updatedAt": "2021-08-25T23:33:36.685Z",
+  "updatedAt": "2021-08-25T23:33:36.714Z",
   "devdoc": {
     "methods": {}
   },
